@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Header */
+.header {
+  background-color: #0057ff;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #cfe0ff;
+}
+
+/* Form card */
+.container {
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 25px;
+  background-color: #111111;
+  border: 1px solid #0057ff;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #3d8bff;
+  border-bottom: 2px solid #0057ff;
+  padding-bottom: 6px;
+  margin-top: 30px;
+}
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Layout */
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.field {
+  flex: 1;
+  margin-top: 14px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0057ff;
+}
+
+small {
+  color: #3d8bff;
+}
+
+.choices label {
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.terms {
+  margin-top: 20px;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #0057ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0044cc;
+}
+
+/* Error box */
+#errorBox {
+  display: none;
+  background-color: #1a0000;
+  border-left: 4px solid #ff3b3b;
+  color: #ff8080;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+#modalContent {
+  background-color: #111111;
+  border: 1px solid #0057ff;
+  border-radius: 8px;
+  width: 450px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow: auto;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#modalContent h2 {
+  margin-top: 0;
+}
+
+#modalContent p {
+  margin: 8px 0;
+  border-bottom: 1px solid #222222;
+  padding-bottom: 6px;
+}
+
+#modalContent b {
+  color: #3d8bff;
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .row {
+    display: block;
+  }
+}
